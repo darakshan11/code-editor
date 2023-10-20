@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  <title>Real-Time Editor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer type="text/javascript" src="app.js"></script>
+  
+  </head>
+ <body>
+  <div class="container split">
+    <!-- Text area for Html Code  -->
+    <textarea id="htmlCode"  placeholder="Type HTML code here"></textarea>
+    <!-- Text area for Css Code  -->
+    <textarea id="cssCode"  placeholder="Type CSS code here" ></textarea>
+    <!-- Text area for Javascript Code  -->
+    <textarea id="javascriptCode" spellcheck="false" placeholder="Type JavaScript code here" ></textarea>
+  </div>
+  <div class="code-editor">
+    <div class="editor-toolbar">
+        <button class="btn copy-btn" id="copy-button">Copy</button>
+        <button class="btn save-btn" id="save-button">Save</button>
+        <button class="btn lock-btn" id="lock-button">Lock</button>
+    </div>
+  <div class="iframe-container split">
+    <iframe id="viewer"></iframe>
+  </div>
+  
+ </body>
+ </html>
